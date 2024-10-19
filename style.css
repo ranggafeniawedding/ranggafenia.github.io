@@ -74,6 +74,7 @@ body {
 .mynavbar .offcanvas-title {
   font-family: 'Sacramento', cursive;
   font-size: 3.2rem;
+  color: var(--blue);
   font-weight: bold;
 }
 
@@ -82,7 +83,7 @@ body {
 }
 
 .home {
-  background-image: url(img/bg.png);
+  /* background-image: url(img/bg.png); */
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
