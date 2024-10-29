@@ -55,13 +55,13 @@ body {
 
 .hero a {
   color: var(--greenForest);
-  background-color: white;
+  background-color: var(--beige);
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
   background-color: var(--greenForest);
-  color: white;
+  color: var(--beige);
 }
 
 .mynavbar {
@@ -134,7 +134,7 @@ body {
 .home .heart {
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: var(--beige);
   display: flex;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -150,7 +150,7 @@ body {
 
 .info {
   background-color: var(--beige);
-  /* color: white; */
+  /* color: var(--beige); */
   color: var(--greenForest);
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -167,7 +167,7 @@ body {
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
+  color: var(--beige) !important;
   border: 1px solid #999;
 }
 
@@ -333,14 +333,14 @@ body {
 
 .rsvp button {
   background-color: var(--greenForest);
-  color: white;
+  color: var(--beige);
   border: 1px solid var(--greenForest);
 }
 
 .rsvp button:hover {
-  background-color: white;
+  background-color: var(--beige);
   color: var(--greenForest);
-  border: 1px solid white;
+  border: 1px solid var(--beige);
 }
 
 footer {
@@ -356,7 +356,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: var(--beige);
 }
 
 footer li {
@@ -373,7 +373,7 @@ footer li {
   bottom: 2.5rem;
   right: 2rem;
   cursor: pointer;
-  color: white;
+  color: var(--beige);
   opacity: 0.5;
   mix-blend-mode: difference;
   animation: rotating 4s linear infinite;
