@@ -3,6 +3,9 @@
   --pink: #f14e95;
   --bg: #0a0a0a;
   --bgPeach: #FF9874;
+  --beige: #FDFBED;
+  --greenForest: #003D3A;
+  --emerald: #0C1618;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
@@ -51,13 +54,13 @@ body {
 }
 
 .hero a {
-  color: var(--blue);
+  color: var(--greenForest);
   background-color: white;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--blue);
+  background-color: var(--greenForest);
   color: white;
 }
 
@@ -74,7 +77,7 @@ body {
 .mynavbar .offcanvas-title {
   font-family: 'Dancing Script', cursive;
   font-size: 3.2rem;
-  color: var(--blue);
+  color: var(--greenForest);
   font-weight: bold;
 }
 
@@ -97,7 +100,7 @@ body {
 .gallery h2,
 .rsvp h2,
 .gifts h2 {
-  color: var(--blue);
+  color: var(--greenForest);
   font-family: 'Dancing Script';
   font-size: 5rem;
   font-weight: bold;
@@ -121,7 +124,7 @@ body {
 .home .couple h3 {
   font-family: 'Dancing Script';
   font-size: 2.4rem;
-  color: var(--blue);
+  color: var(--greenForest);
 }
 
 .home .couple img {
@@ -142,12 +145,13 @@ body {
 
 .home .heart i {
   margin: auto;
-  color: var(--blue);
+  color: var(--greenForest);
 }
 
 .info {
-  background-color: var(--bgPeach);
-  color: white;
+  background-color: var(--beige);
+  /* color: white; */
+  color: var(--greenForest);
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -312,7 +316,7 @@ body {
 }
 
 .rsvp {
-  background-color: var(--bgPeach);
+  background-color: var(--beige);
 }
 
 .rsvp h2 {
@@ -320,33 +324,33 @@ body {
 }
 
 .rsvp p {
-  color: white;
+  color: var(--greenForest);
 }
 
 .rsvp form label {
-  color: white;
+  color: var(--greenForest);
 }
 
 .rsvp button {
-  background-color: var(--blue);
+  background-color: var(--greenForest);
   color: white;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--greenForest);
 }
 
 .rsvp button:hover {
   background-color: white;
-  color: var(--blue);
+  color: var(--greenForest);
   border: 1px solid white;
 }
 
 footer {
   padding: 3rem;
-  background-color: var(--blue);
-  color: white;
+  background-color: var(--greenForest);
+  color: var(--beige);
 }
 
 footer a {
-  color: var(--bgPeach);
+  color: var(--beige);
   font-weight: bold;
   text-decoration: none;
 }
