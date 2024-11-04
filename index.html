@@ -4,15 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fenia Rangga Wedding</title>
+  <title>Fenia & Rangga Wedding</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
-    rel="stylesheet"> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +20,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
+  <style>
+    .tanggal {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      /* background-color: #f0f0f0; */
+      padding: 10px;
+    }
+
+    .hari, .tanggal-angka, .bulan, .tahun {
+      display: inline-block;
+      padding: 0 10px;
+      vertical-align: middle;
+    }
+
+    .garis-pemisah {
+      display: inline-block;
+      border-left: 4px solid #ccc;
+      height: 3em; /* Mengurangi tinggi garis */
+      margin: 0.5px;
+      vertical-align: middle; 
+    }
+  </style>
 </head>
 
 <body>
@@ -34,8 +51,8 @@
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center" style="color: var(--beige)">
     <main>
       <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-      <h1>Fenia Rangga</h1>
-      <p>Akan melangsungkan syukuran pernikahan dalam:</p>
+      <h1>Fenia & Rangga</h1>
+      <p>akan melangsungkan syukuran pernikahan dalam:</p>
       <div class="simply-countdown"></div>
       <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
     </main>
@@ -44,14 +61,14 @@
 
   <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Fenia Rangga</a>
+      <a class="navbar-brand" href="#">Fenia & Rangga</a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fenia Rangga</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fenia & Rangga</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -73,8 +90,21 @@
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <h2>Assalamualaikum</h2>
-          <h3>Mau ngasih kabar gembira nih</h3>
-          <p>InsyaAllah kita akan menikah pada tanggal 12 Desember 2024 di Bandung. Semoga bisa hadir ya.</p>
+          <br>
+          <h3>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan putra-putri kami: </h3>
+          <h4>
+            <br>
+            <!-- <b style="font-size: 1.5rem;">
+              Kamis, 12 Desember 2024 di Bandung. 
+            </b> -->
+              <div class="tanggal">
+                <span class="hari">Kamis</span>
+                <span class="garis-pemisah"></span>
+                <span class="tanggal-angka">12</span>
+                <span class="garis-pemisah"></span>
+                <span class="bulan">Desember 2024</span>
+              </div>
+            </h4>
         </div>
       </div>
 
@@ -83,9 +113,8 @@
           <div class="row">
             <div class="col-8 text-end">
               <h3>Fenia Fitriyani</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis,
-                incidunt soluta?</p>
-              <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+              <br>
+              <p>Putri Bapak Asep Muchdin Hariri <br> dan <br> Ibu Ike Rukmini</p>
             </div>
             <div class="col-4">
               <img src="img/Fenia.jpeg" alt="Sandhika Galih" class="img-responsive rounded-circle">
@@ -102,12 +131,19 @@
             </div>
             <div class="col-8">
               <h3>Rangga Iskandar</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis,
-                incidunt soluta?</p>
-              <p>Putra dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+              <br>
+              <p>Putra Bapak Alek Iskandar (Alm.) <br> dan <br> Ibu Imas Suhaeti</p>
             </div>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 mt-6 text-center">
+            <br>
+            <br>
+            <h4>Merupakan suatu kebahagiaan bagi kami jika Bapak/Ibu/Saudara/i dapat berkenan hadir.</h4>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -145,7 +181,7 @@
               <div class="row justify-content-center">
                 <div class="col-md-6">
                   <i class="bi bi-clock d-block"></i>
-                  <span>08:00 - 09:00</span>
+                  <span>08:00 - 10:00</span>
                 </div>
                 <div class="col-md-6">
                   <i class="bi bi-calendar3 d-block"></i>
@@ -186,7 +222,6 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <span>Bagaimana Cinta Kami Bersemi</span>
           <h2>Cerita Kami</h2>
         </div>
       </div>
@@ -199,11 +234,12 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h3>Pertama Bertemu</h3>
+                  <span>11 Januari 2023</span>
                   <!-- <span>1 Juni 2000</span> -->
                 </div>
                 <div class="timeline-body">
-                  <p>Awalnya cuma saling sapa, ngobrolin hal-hal random, mulai dari gosip sampai curug favorit. Eh, lama-lama, chat kita jadi semakin panjang, dan obrolan pun jadi makin dalam. 
-                    Sampai akhirnya, ada rasa yang beda saat nungguin notifikasi dari dia.</p>
+                  <p>Awalnya saling menyapa, kemudian berlanjut pada pembicaraan mengenai hobi jalan-jalan ke Curug. Lama-lama, obrolan kami pun jadi makin dalam. 
+                    Sampai akhirnya, ada rasa yang beda saat  menunggu notifikasi pesan dari dia.</p>
                 </div>
               </div>
 
@@ -216,8 +252,8 @@
                   <span>11 Maret 2023</span>
                 </div>
                 <div class="timeline-body">
-                  <p>Sampai di suatu hari, dia ngajak jalan ke Curug Citambur. Katanya sih cuma mau jalan-jalan dan menikmati alam. Aku sih langsung setuju aja. Hari itu, cuacanya saat itu hujan. Pas sampai di sana, suara gemuruh air terjun bercampur sama suara tawa kita. Tapi tiba-tiba, dia berubah agak serius. Awalnya aku pikir dia mau cerita sesuatu yang berat, tapi ternyata dia malah nanya, “Eh, aku teh suka sama teh kuy?”. Aku ketawa, kirain bercanda. Tapi ternyata, dia beneran serius. Mukanya itu lho, lucu banget, antara gugup dan berani. 
-                    Rasanya kayak dunia tiba-tiba berhenti sebentar, dan Curug Citambur hari itu jadi tempat yang spesial buat kita.</p>
+                  <p>Suatu hari di Curug Citambur, hari yang awalnya hanya tentang jalan-jalan santai yang langsung kusetujui. Siapa sangka, di tengah rintik hujan dan gemuruh air terjun yang menyatu dengan tawa kami, tiba-tiba momen itu berubah. Awalnya aku pikir dia mau menceritakan sesuatu yang berat, ternyata dia malah bertanya, "Eh, aku teh suka sama Teh Kuy?". Aku seketika ketawa, karena dikira bercanda. Ternyata, dia serius. Lalu aku mengangguk tanda aku pun menyukainya juga. Mukanya yang lucu, antara gugup dan berani masih kuingat. 
+                    Ketika itu dunia serasa berhenti sebentar, lalu Curug Citambur sejak saat itu jadi tempat yang spesial.</p>
                 </div>
               </div>
 
@@ -226,12 +262,11 @@
               <div class="timeline-image" style="background-image: url(img/1.jpeg);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3>Tunangan</h3>
-                  <span>7 November 2009</span>
+                  <h3>Foto Latar Biru</h3>
+                  <span>11 Oktober 2023</span>
                 </div>
                 <div class="timeline-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, deleniti distinctio. Esse quas sit
-                  explicabo corporis magni qui expedita a.
+                  <p>Alhamdulillah bisa sampai ke fase difoto dengan latar biru. Mohon doa restu dari semuanya, semoga pernikahan kami senantiasa diberikan kebahagian dan keselamatan oleh Allah SWT.</p> 
                 </div>
               </div>
             </li>
@@ -270,9 +305,9 @@
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/Gallery 5.jpeg" data-toggle="lightbox" data-caption="Kampung Singkur - Pangalengan"
+          <a href="img/gallery/Gellery 5.jpeg" data-toggle="lightbox" data-caption="Kampung Singkur - Pangalengan"
             data-gallery="mygallery">
-            <img src="img/gallery/Gallery 5.jpeg" alt="Kampung Singkur - Pangalengan" class="img-fluid w-100 rounded">
+            <img src="img/gallery/Gellery 5.jpeg" alt="Kampung Singkur - Pangalengan" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
@@ -362,7 +397,6 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <span>ungkapan tanda kasih</span>
           <h2>Kirim Hadiah</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iure perferendis provident ab aliquam nemo.
           </p>
@@ -374,11 +408,21 @@
           <ul class="list-group">
             <li class="list-group-item">
               <div class="fw-bold">BCA</div>
-              1392902141 - FENIA FITRIYANI
+              <div class="d-flex align-items-center justify-content-center">
+                1392902141 - FENIA FITRIYANI
+              </div>
+              <button class="btn btn-primary" onclick="copyText('1392902141')">
+                <i class="bi bi-clipboard"></i> Salin Nomer Rekening
+              </button>
             </li>
             <li class="list-group-item">
-              <div class="fw-bold">Saweria</div>
-              <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
+              <div class="fw-bold">SEABANK</div>
+              <div class="d-flex align-items-center justify-content-center">
+                901856176341 - FENIA FITRIYANI
+              </div>
+              <button class="btn btn-primary" onclick="copyText('901856176341')">
+                <i class="bi bi-clipboard"></i> Salin Nomer Rekening
+              </button>
             </li>
           </ul>
         </div>
@@ -406,9 +450,9 @@
   </footer>
 
   <div id="audio-container">
-    <audio id="song" autoplay loop>
+    <!-- <audio id="song" autoplay loop>
       <source src="audio/It's You.mp3" type="audio/mp3">
-    </audio>
+    </audio> -->
 
     <div class="audio-icon-wrapper" style="display: none;">
       <i class="bi bi-disc"></i>
@@ -528,6 +572,13 @@
     namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
     document.querySelector('#nama').value = nama;
+  </script>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert('Nomer rekening berhasil disalin!');
+    }
   </script>
 </body>
 

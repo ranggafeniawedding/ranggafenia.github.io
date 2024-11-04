@@ -346,6 +346,18 @@ body {
   border: 1px solid var(--greenForest);
 }
 
+.gifts button {
+  background-color: var(--greenForest);
+  color: var(--beige);
+  border: 1px solid var(--greenForest);
+}
+
+.gifts button:hover {
+  background-color: var(--beige);
+  color: var(--greenForest);
+  border: 1px solid var(--beige);
+}
+
 footer {
   padding: 3rem;
   background-color: var(--greenForest);
