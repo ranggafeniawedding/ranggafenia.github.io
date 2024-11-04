@@ -87,6 +87,7 @@ body {
 
 .home {
   /* background-image: url(img/bg.png); */
+  background-color: var(--beige);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -149,9 +150,9 @@ body {
 }
 
 .info {
-  background-color: var(--beige);
+  background-color: var(--greenForest);
   /* color: var(--beige); */
-  color: var(--greenForest);
+  color: var(--beige);
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -193,6 +194,7 @@ body {
 .gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
+  background-color: var(--beige);
 }
 
 .story span,
@@ -316,31 +318,32 @@ body {
 }
 
 .rsvp {
-  background-color: var(--beige);
+  background-color: var(--greenForest);
 }
 
 .rsvp h2 {
   font-size: 4.5rem;
+  color: var(--beige);
 }
 
 .rsvp p {
-  color: var(--greenForest);
+  color: var(--beige);
 }
 
 .rsvp form label {
-  color: var(--greenForest);
+  color: var(--beige);
 }
 
 .rsvp button {
-  background-color: var(--greenForest);
-  color: var(--beige);
-  border: 1px solid var(--greenForest);
-}
-
-.rsvp button:hover {
   background-color: var(--beige);
   color: var(--greenForest);
   border: 1px solid var(--beige);
+}
+
+.rsvp button:hover {
+  background-color: var(--greenForest);
+  color: var(--beige);
+  border: 1px solid var(--greenForest);
 }
 
 footer {
