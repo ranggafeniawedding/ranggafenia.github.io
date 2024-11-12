@@ -55,6 +55,18 @@
       .garis-pemisah {
         height: 2em;
       }
+      
+      .offcanvas {
+        transition: transform 0.3s ease-in-out !important;
+      }
+      
+      .offcanvas.offcanvas-end {
+        transform: translateX(100%) !important;
+      }
+      
+      .offcanvas.show {
+        transform: translateX(0) !important;
+      }
     }
   </style>
 </head>
@@ -76,36 +88,22 @@
   <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
     <div class="container">
       <a class="navbar-brand" href="#">Fenia & Rangga</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fenia & Rangga</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#home" onclick="closeOffcanvas()">Home</a>
-            <a class="nav-link" href="#info" onclick="closeOffcanvas()">Info</a>
-            <a class="nav-link" href="#story" onclick="closeOffcanvas()">Story</a>
-            <a class="nav-link" href="#gallery" onclick="closeOffcanvas()">Gallery</a>
-            <a class="nav-link" href="#rsvp" onclick="closeOffcanvas()">RSVP</a>
-            <a class="nav-link" href="#gifts" onclick="closeOffcanvas()">Gifts</a>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#info">Info</a>
+          <a class="nav-link" href="#story">Story</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#rsvp">RSVP</a>
+          <a class="nav-link" href="#gifts">Gifts</a>
         </div>
       </div>
     </div>
   </nav>
-
-  <script>
-    function closeOffcanvas() {
-      const offcanvas = document.querySelector('.offcanvas');
-      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
-      bsOffcanvas.hide();
-    }
-  </script>
 
   <section id="home" class="home">
     <div class="container">
