@@ -424,7 +424,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 70px;
+    padding: calc(4vw + 30px);
   }
 
   .home .heart {
@@ -468,7 +468,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 60px;
+    padding: calc(3vw + 25px);
     margin: 5px;
   }
 
@@ -494,7 +494,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
+    padding: calc(2vw + 20px);
     margin: 3px;
   }
 

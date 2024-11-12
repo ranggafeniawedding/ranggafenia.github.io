@@ -24,23 +24,37 @@
     .tanggal {
       text-align: center;
       font-family: Arial, sans-serif;
-      font-size: 24px;
-      /* background-color: #f0f0f0; */
+      font-size: clamp(18px, 3vw, 24px);
       padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
     .hari, .tanggal-angka, .bulan, .tahun {
-      display: inline-block;
-      padding: 0 10px;
-      vertical-align: middle;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .hari:hover, .tanggal-angka:hover, .bulan:hover, .tahun:hover {
+      transform: scale(1.1);
+      color: #ccc;
     }
 
     .garis-pemisah {
-      display: inline-block;
       border-left: 4px solid #ccc;
-      height: 3em; /* Mengurangi tinggi garis */
-      margin: 0.5px;
-      vertical-align: middle; 
+      height: clamp(2em, 4vw, 3em);
+      margin: 0 0.5rem;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .garis-pemisah {
+        height: 2em;
+      }
     }
   </style>
 </head>
@@ -282,7 +296,6 @@
         <div class="col-md-8 col-10 text-center">
           <span>Memori Kisah Kami</span>
           <h2>Galeri Foto</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque?</p>
         </div>
       </div>
 
