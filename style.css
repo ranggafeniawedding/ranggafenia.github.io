@@ -386,6 +386,8 @@ footer {
   padding: 3rem;
   background-color: var(--greenForest);
   color: var(--beige);
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 
 footer a {
