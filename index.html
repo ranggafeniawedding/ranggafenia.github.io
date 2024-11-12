@@ -87,17 +87,25 @@
         </div>
         <div class="offcanvas-body">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#info">Info</a>
-            <a class="nav-link" href="#story">Story</a>
-            <a class="nav-link" href="#gallery">Gallery</a>
-            <a class="nav-link" href="#rsvp">RSVP</a>
-            <a class="nav-link" href="#gifts">Gifts</a>
+            <a class="nav-link" href="#home" onclick="closeOffcanvas()">Home</a>
+            <a class="nav-link" href="#info" onclick="closeOffcanvas()">Info</a>
+            <a class="nav-link" href="#story" onclick="closeOffcanvas()">Story</a>
+            <a class="nav-link" href="#gallery" onclick="closeOffcanvas()">Gallery</a>
+            <a class="nav-link" href="#rsvp" onclick="closeOffcanvas()">RSVP</a>
+            <a class="nav-link" href="#gifts" onclick="closeOffcanvas()">Gifts</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
+
+  <script>
+    function closeOffcanvas() {
+      const offcanvas = document.querySelector('.offcanvas');
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+      bsOffcanvas.hide();
+    }
+  </script>
 
   <section id="home" class="home">
     <div class="container">

@@ -72,6 +72,22 @@ body {
 
 .mynavbar .offcanvas {
   height: 100vh;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .mynavbar .offcanvas {
+    width: 100%;
+  }
+}
+
+.mynavbar .offcanvas.offcanvas-end {
+  transform: translateX(100%);
+}
+
+.mynavbar .offcanvas.show {
+  transform: translateX(0);
 }
 
 .mynavbar .navbar-brand,
@@ -84,6 +100,14 @@ body {
 
 .mynavbar .nav-link {
   text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.mynavbar .nav-link:hover {
+  background-color: var(--greenForest);
+  color: var(--beige);
+  border-radius: 5px;
 }
 
 .home {
@@ -479,6 +503,16 @@ footer li {
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .mynavbar .nav-link:hover {
+    background-color: var(--greenForest);
+    color: var(--beige);
+    transform: translateX(10px);
   }
 
   .sticky-top {
@@ -520,5 +554,19 @@ footer li {
 
   .timeline li .timeline-panel::after {
     top: 31px;
+  }
+
+  .mynavbar .offcanvas {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .mynavbar .nav-link {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .mynavbar .nav-link:last-child {
+    border-bottom: none;
   }
 }
