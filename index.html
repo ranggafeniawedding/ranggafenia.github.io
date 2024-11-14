@@ -68,6 +68,32 @@
         transform: translateX(0) !important;
       }
     }
+
+    @media (max-width: 500px) {
+      .tanggal {
+        font-size: clamp(12px, 1.5vw, 16px);
+      }
+      
+      .hari, .tanggal-angka, .bulan, .tahun {
+        padding: 0.3rem 0.8rem;
+      }
+      
+      .timeline-body {
+        font-size: 0.8em;
+      }
+      
+      .timeline-image {
+        height: 200px;
+        background-size: cover;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .timeline-image {
+        height: 200px;
+        background-size: cover;
+      }
+    }
   </style>
 </head>
 

@@ -131,6 +131,12 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .home h2 {
+    font-size: 3rem;
+  }
+}
+
 .home h3 {
   color: #444;
   font-size: 1.5rem;
