@@ -2,18 +2,20 @@
   --blue: #7695FF;
   --pink: #f14e95;
   --bg: #0a0a0a;
-  --bgPeach: #FF9874;
-  --beige: #FDFBED;
-  --beigeUp: #F8F7F3;
-  --greenForest: #003D3A;
+  --bgPeach: hsl(16, 100%, 73%);
+  --beige: #edecec;
+  --beigeUp: #b4a396;
+  --greenForest: #4e423a;
   --emerald: #0C1618;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body {
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Lora", serif;
   min-height: 4000px;
+  color: var(--greenForest);
+
 }
 
 .hero::before {
@@ -42,8 +44,8 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 6rem;
+  font-family: "Rouge Script", cursive;
+  font-size: 5rem;
 }
 
 .hero h4 {
@@ -91,10 +93,10 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 3.2rem;
   color: var(--greenForest);
-  font-weight: bold;
+  
 }
 
 .mynavbar .nav-link {
@@ -126,26 +128,27 @@ body {
 .rsvp h2,
 .gifts h2 {
   color: var(--greenForest);
-  font-family: 'Dancing Script';
+  font-family: 'Rouge Script';
   font-size: 5rem;
-  font-weight: bold;
+  
 }
 
 @media (max-width: 576px) {
   .home h2 {
     font-size: 3rem;
+    color: var(--greenForest);
   }
 }
 
 .home h3 {
-  color: #444;
+  color: var(--greenForest);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--greenForest);
 }
 
 .home .couple {
@@ -153,7 +156,7 @@ body {
 }
 
 .home .couple h3 {
-  font-family: 'Dancing Script';
+  font-family: 'Rouge Script';
   font-size: 2.4rem;
   color: var(--greenForest);
 }
@@ -185,6 +188,10 @@ body {
   color: var(--beige);
   padding-top: 10rem;
   padding-bottom: 8rem;
+}
+
+.info h3 {
+  font-size: 1.5rem;
 }
 
 .info .alamat {
@@ -228,10 +235,13 @@ body {
 }
 
 .story span,
-.gallery span,
+.gallery span {
+  color: var(--greenForest);
+}
+
 .gifts span {
   text-transform: uppercase;
-  color: #666;
+  color: var(--greenForest);
   font-size: 0.9rem;
   letter-spacing: 1px;
   display: block;
@@ -365,26 +375,26 @@ body {
 }
 
 .rsvp button {
-  background-color: var(--beige);
-  color: var(--greenForest);
-  border: 1px solid var(--beige);
+  background-color: var(--beigeUp);
+  color: var(--beige);
+  border: 1px solid var(--beigeUp);
 }
 
 .rsvp button:hover {
-  background-color: var(--greenForest);
-  color: var(--beige);
-  border: 1px solid var(--greenForest);
+  background-color: var(--beige);
+  color: var(--beigeUp);
+  border: 1px solid var(--beige);
 }
 
 .gifts button {
-  background-color: var(--greenForest);
+  background-color: var(--beigeUp);
   color: var(--beige);
-  border: 1px solid var(--greenForest);
+  border: 1px solid var(--beigeUp);
 }
 
 .gifts button:hover {
-  background-color: var(--beige);
-  color: var(--greenForest);
+   background-color: var(--beige);
+  color: var(--beigeUp);
   border: 1px solid var(--beige);
 }
 
@@ -392,13 +402,13 @@ footer {
   padding: 3rem;
   background-color: var(--greenForest);
   color: var(--beige);
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 3rem;
 }
 
 footer a {
   color: var(--beige);
-  font-weight: bold;
+  
   text-decoration: none;
 }
 
@@ -410,6 +420,10 @@ footer li {
   list-style: none;
   display: inline;
   margin: 0.5rem;
+}
+
+footer h1 {
+  font-size: 5rem;
 }
 
 .audio-icon-wrapper {
